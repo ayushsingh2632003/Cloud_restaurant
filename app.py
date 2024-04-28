@@ -278,6 +278,31 @@ with tab4:
     """, unsafe_allow_html=True)
 
 
+    st.markdown("---")  # Add a gap between images
+    st.markdown("---")  # Add a gap between images
+    st.image("p6.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.markdown("""
+    <div style="max-width: 800px; text-align: left;">
+                The graph shows the average cost of a meal at various locations in three Indian cities: Agra,
+                Indore, and Lucknow. Prices vary depending on the location.  Generally, restaurants in Agra 
+                tend to be more expensive than restaurants in Lucknow or Indore. For example, the most expensive
+                meal in Agra costs ₹1,425, while the most expensive meal in Lucknow costs ₹2,050. Sapru Marg in 
+                Lucknow is the least expensive place to eat out of the ones listed, where the average meal costs 
+                ₹100.
+                
+                 
+                
+        
+    </div>
+    """, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
     
 
 
