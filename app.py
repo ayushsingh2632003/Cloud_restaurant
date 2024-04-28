@@ -100,7 +100,7 @@ def input_image_setup(uploaded_file):
 
 
 
-tab1, tab2,tab3,tab4= st.tabs(['Restaurents', 'Cuisine','Cuisine reviews','Analysis City Wise Distribution'])
+tab1, tab2,tab3,tab4= st.tabs(['Restaurants', 'Cuisine','Cuisine reviews','Analysis City Wise Distribution'])
 
 with tab1:
     st.title("Restaurant Recommendation System")
