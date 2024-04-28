@@ -238,6 +238,53 @@ with tab4:
     """, unsafe_allow_html=True)
 
 
+    st.markdown("---")  # Add a gap between images
+    st.markdown("---")  # Add a gap between images
+    st.image("p4.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.markdown("""
+    <div style="max-width: 800px; text-align: left;">
+                The graph shows the distribution of restaurants across various sub-locations 
+                within three Indian cities. There are more restaurants in some sub-locations than
+                others. For example, Civil Lines in Agra has the most restaurants. Lucknow appears
+                to have the most restaurants out of the three cities listed.Indore showcases this 
+                variety as well. 
+                
+        
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("---")  # Add a gap between images
+    st.markdown("---")  # Add a gap between images
+    st.image("p5.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+
+    st.markdown("""
+    <div style="max-width: 800px; text-align: left;">
+                “Average ratings with each sublocation of city”. The X-axis shows the city and 
+                sublocations, and the Y-axis shows the average rating.The graph displays average 
+                ratings for places, presumably restaurants, across various sublocations within four 
+                Indian cities: Agra, Indore, Kanpur, and Lucknow.Here’s a breakdown of some of the
+                places mentioned:
+                Agra:
+                The sublocation with the highest average rating is Dayal Bagh at 4.80.Other sublocations
+                include Tajganj, Lohamandi, and Ranjeet Hanuman.
+                Indore: It has the highest average rating among the four cities at 2.65.Sublocations 
+                aren't mentioned for Indore.
+                Lucknow:
+                The sublocation with the highest average rating is Charbagh at 4.80.Other sublocations 
+                include Alambagh, Gomti Nagar, and Hazratganj.
+                 
+                
+        
+    </div>
+    """, unsafe_allow_html=True)
+
+
+    
+
+
+
+
+
+
 
 
         
