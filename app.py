@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import pickle
@@ -228,7 +227,7 @@ with tab4:
 
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
-                The bar graph you sent shows the average distance in kilometers at which 
+                The bar graph  shows the average distance in kilometers at which 
                 food is available in three Indian cities: Agra, Indore, and Lucknow. Lucknow
                 has the shortest average distance at which food is available, at 3.926 
                 kilometers. Indore follows closely behind, with an average distance of 5.391 
