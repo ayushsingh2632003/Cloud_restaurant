@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import pickle
@@ -100,7 +101,7 @@ def input_image_setup(uploaded_file):
 
 
 
-tab1, tab2,tab3 = st.tabs(['Restaurents', 'Cuisine','Cuisine reviews'])
+tab1, tab2,tab3,tab4= st.tabs(['Restaurents', 'Cuisine','Cuisine reviews','Analysis City Wise Distribution'])
 
 with tab1:
     st.title("Restaurant Recommendation System")
@@ -185,8 +186,69 @@ if the given image is not in category of food  or not related to any of the food
             except google.api_core.exceptions.InvalidArgument:
                 st.error("Please upload an image of food or drink.")
 
+with tab4:
+
+    st.title("RESTAURANT ANALYSIS")
+    st.image("p1.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+
+    st.markdown("""
+    <div style="max-width: 800px; text-align: left;">
+        Above Bar graph shows the average cuisine ratings of three different cities
+        : Agra, Indore, and Lucknow. Lucknow has the highest average cuisine rating,
+        at 3.8885. Indore follows closely behind, with an average rating of 3.8470. 
+        Agra has the lowest average cuisine rating of the three cities, at 3.7866.
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")  # Add a gap between images
+    st.markdown("---")  # Add a gap between images
+
+    st.image("p2.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.markdown("""
+    <div style="max-width: 800px; text-align: left;">
+        Pie chart  showing information about two different aspects of these cities:
+        cuisine rating and cuisine price.
+        Cuisine Rating: The graph likely depicts average ratings (out of 5) given by
+        reviewers for the overall dining experience in each city. Lucknow has the highest
+        average rating (3.8885), followed by Indore (3.8470) and then Agra (3.7866). This
+        suggests that Lucknow receives the most favorable reviews for its food scene.
+        Cuisine Price: The text you mentioned likely refers to separate data and indicates
+        the average cost per person for a meal (₹) in each city. Here, Agra appears to be 
+        the most affordable option with an average price of ₹250.14, followed by Lucknow 
+        (₹278.42) and Indore (₹321.89).It's interesting to see that while Lucknow boasts 
+        the highest rated cuisine, Agra might be a more budget-friendly choice for dining.
+        Indore falls somewhere in the middle for both rating and price.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("---")  # Add a gap between images
+    st.markdown("---")  # Add a gap between images
+    
+    st.image("p3.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+
+    st.markdown("""
+    <div style="max-width: 800px; text-align: left;">
+                The bar graph you sent shows the average distance in kilometers at which 
+                food is available in three Indian cities: Agra, Indore, and Lucknow. Lucknow
+                has the shortest average distance at which food is available, at 3.926 
+                kilometers. Indore follows closely behind, with an average distance of 5.391 
+                kilometers. Agra has the farthest average distance at which food is available,
+                at 6.0 kilometers
+        
+    </div>
+    """, unsafe_allow_html=True)
 
 
+
+
+        
+            
+            
+        
+         
+
+
+# https://public.tableau.com/views/Restaurant_analysis/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
 
 # if __name__ == "__main__":
 #     main()
