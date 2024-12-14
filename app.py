@@ -143,7 +143,7 @@ with tab3:
 
     if uploaded_file is not None:
         food_image = PILImage.open(uploaded_file)
-        st.image(food_image, caption="Uploaded Image of Food", use_column_width=True)
+        st.image(food_image, caption="Uploaded Image of Food", use_container_width=True)
         submit = st.button("Tell me about Food Nutrition")
 
         if submit:
@@ -194,7 +194,7 @@ if the given image is not in category of food  or not related to any of the food
 with tab4:
 
     st.title("RESTAURANT ANALYSIS")
-    st.image("p1.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.image("p1.jpg", caption=None, width=None, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
 
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
@@ -208,7 +208,7 @@ with tab4:
     st.markdown("---")  # Add a gap between images
     st.markdown("---")  # Add a gap between images
 
-    st.image("p2.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.image("p2.jpg", caption=None, width=None, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
         Pie chart  showing information about two different aspects of these cities:
@@ -229,7 +229,7 @@ with tab4:
     st.markdown("---")  # Add a gap between images
     st.markdown("---")  # Add a gap between images
     
-    st.image("p3.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.image("p3.jpg", caption=None, width=None, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
 
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
@@ -246,7 +246,7 @@ with tab4:
 
     st.markdown("---")  # Add a gap between images
     st.markdown("---")  # Add a gap between images
-    st.image("p4.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.image("p4.jpg", caption=None, width=None, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
                 The graph shows the distribution of restaurants across various sub-locations 
@@ -260,7 +260,7 @@ with tab4:
     """, unsafe_allow_html=True)
     st.markdown("---")  # Add a gap between images
     st.markdown("---")  # Add a gap between images
-    st.image("p5.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.image("p5.jpg", caption=None, width=None, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
 
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
@@ -286,7 +286,7 @@ with tab4:
 
     st.markdown("---")  # Add a gap between images
     st.markdown("---")  # Add a gap between images
-    st.image("p6.jpg", caption=None, width=None, use_column_width=True, clamp=False, channels="RGB", output_format="auto")
+    st.image("p6.jpg", caption=None, width=None, use_container_width=True, clamp=False, channels="RGB", output_format="auto")
     st.markdown("""
     <div style="max-width: 800px; text-align: left;">
                 The graph shows the average cost of a meal at various locations in three Indian cities: Agra,
