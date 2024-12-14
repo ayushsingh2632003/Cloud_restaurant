@@ -73,9 +73,15 @@ genai.configure(api_key="AIzaSyD0sVyNWTQxbOjJeZzmaZa6mb9Obz6etuk")
 
 
 def get_gemini_response(input_prompt, image):
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content([input_prompt, image[0]])
     return response.text
+
+
+
+
+
+
 
 
 def input_image_setup(uploaded_file):
