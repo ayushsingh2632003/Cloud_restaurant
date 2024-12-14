@@ -69,7 +69,7 @@ def recommend_restaurants(restaurant_name, user_location, top_n=3):
 # def main():
 
 
-genai.configure(api_key="AIzaSyArKdHLVe7TjPrqsSjBa086mxD3UP7Hg8Y")
+genai.configure(api_key="AIzaSyD0sVyNWTQxbOjJeZzmaZa6mb9Obz6etuk")
 
 
 def get_gemini_response(input_prompt, image):
